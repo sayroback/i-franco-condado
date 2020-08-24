@@ -1,0 +1,100 @@
+.header {
+  display: flex;
+  background-color: #ff1212;
+  justify-content: space-between;
+  height: 55px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.container-logo {
+  margin: 15px;
+  min-height: 100px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgb(206, 20, 20);
+}
+
+.container-logo .logo {
+  height: 80px;
+  padding: 10px;
+  background-color: #ff1212;
+  /* border: 1px solid blue; */
+}
+
+.menu {
+  display: flex;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+}
+
+.menu .container {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu .container .item-menu {
+  position: relative;
+  height: 55px;
+  width: 130px;
+  margin-right: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.menu .container .item-menu:hover {
+  background-color: #e61111;
+  border-radius: 3px;
+}
+.menu .container .item-menu:hover .titulo-menu {
+  color: #ffc4c4;
+}
+
+.menu .container .item-menu .sub-menu {
+  list-style-type: none;
+  position: absolute;
+  top: 55px;
+  width: 130px;
+  padding: 0;
+  background-color: #b31e1e;
+  box-shadow: 3px 3px 8px #b31e1e;
+}
+
+.menu .container .item-menu .sub-menu li {
+  padding: 16px;
+  margin: 0px;
+  text-align: left;
+}
+
+.menu .container .item-menu .sub-menu li:hover {
+  background-color: #ca2222;
+}
+
+#oferta .sub-menu {
+  display: none;
+}
+
+#oferta:hover .sub-menu {
+  display: block;
+}
+
+#empresas .sub-menu {
+  display: none;
+}
+
+#empresas:hover .sub-menu {
+  display: block;
+}
