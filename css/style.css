@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  font-family: freight-sans-pro-n4, freight-sans-pro, sans-serif;
   background-color: rgb(223, 221, 221);
 }
 
@@ -39,9 +40,8 @@ body {
   text-decoration: none;
   color: white;
   margin: 8px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 13px;
+  font-weight: bold;
   position: relative;
 }
 
@@ -71,7 +71,7 @@ body {
   border-radius: 3px;
 }
 .menu .container .item-menu:hover .titulo-menu {
-  color: rgb(241, 189, 189);
+  color: #ffc4c4;
 }
 
 .menu .container .item-menu .sub-menu {
@@ -125,8 +125,6 @@ footer {
   max-width: 1300px;
   min-height: 250px;
   margin: 0 auto;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 footer .item-footer {
@@ -223,7 +221,6 @@ footer #contacto {
 #autor p {
   margin: 0;
   color: white;
-  font-family: fantasy;
   font-size: 12px;
 }
 
