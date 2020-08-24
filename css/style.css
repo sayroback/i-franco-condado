@@ -67,8 +67,11 @@ body {
 }
 
 .menu .container .item-menu:hover {
-  border: 2px solid rgb(230, 24, 24);
+  background-color: #e61111;
   border-radius: 3px;
+}
+.menu .container .item-menu:hover .titulo-menu {
+  color: rgb(241, 189, 189);
 }
 
 .menu .container .item-menu .sub-menu {
