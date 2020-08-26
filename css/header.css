@@ -54,9 +54,16 @@
   border-radius: 3px;
 }
 
+.menu .container #normas {
+  background-color: #ff4d12;
+}
+
+.menu .container #normas:hover {
+  background-color: #e61111;
+}
+
 .menu .container .item-menu:hover {
   background-color: #e61111;
-  border-radius: 3px;
 }
 .menu .container .item-menu:hover .titulo-menu {
   color: #ffc4c4;
