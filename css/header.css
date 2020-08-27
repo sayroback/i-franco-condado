@@ -1,79 +1,101 @@
 .header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #ff1212;
-  height: 55px;
+  max-height: 55px;
   max-width: 1300px;
   margin: 0 auto;
 }
 
-.container-logo .logo {
-  max-height: 80px;
-  padding: 10px;
-  margin: 15px;
-  background-color: #ff1212;
-  box-shadow: 2px 2px 5px rgb(206, 20, 20);
+.menu {
+  display: flex;
+  width: 1300px;
 }
-.menu a {
+
+.container-logo {
+  height: 90px;
+}
+
+.logo {
+  position: relative;
+  top: 10px;
+  margin-left: 20px;
+  height: 90px;
+  padding: 10px;
+  background-color: #ff1212;
+  box-shadow: 3px 2px 6px #e61111;
+}
+
+.container a {
   text-decoration: none;
   color: white;
-  margin: 8px;
   font-size: 13px;
-  font-weight: bold;
-  position: relative;
 }
 
-.menu .container {
+.container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  width: 100%;
+  height: inherit;
+  padding-left: 0;
   list-style-type: none;
-  align-items: center;
   margin: 0;
-  padding: 0;
 }
 
-.menu .container .item-menu {
-  position: relative;
-  height: 55px;
-  width: 130px;
-  margin-right: 6px;
+.container .item-menu {
+  display: flex;
+}
+
+.titulo-menu {
+  display: flex;
+  height: inherit;
+  padding: 0 12px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  cursor: pointer;
-  border-radius: 3px;
 }
 
-.menu .container #normas {
+.container #normas {
   background-color: #ff4d12;
 }
 
-.menu .container #normas:hover {
+.container #normas:hover {
   background-color: #e61111;
 }
 
-.menu .container .item-menu:hover {
+.container .item-menu:hover {
   background-color: #e61111;
 }
-.menu .container .item-menu:hover .titulo-menu {
+.container .item-menu:hover .titulo-menu {
   color: #ffc4c4;
 }
 
-.menu .container .item-menu .sub-menu {
+#oferta {
+  width: 132.317px;
+}
+
+#empresas {
+  width: 168.05px;
+}
+
+.container .item-menu .sub-menu {
   list-style-type: none;
   position: absolute;
+  width: inherit;
   top: 55px;
-  width: 130px;
   padding: 0;
   background-color: #b31e1e;
   box-shadow: 3px 3px 8px #b31e1e;
 }
 
-.menu .container .item-menu .sub-menu li {
+.container .item-menu .sub-menu li {
   padding: 16px;
   margin: 0px;
   text-align: left;
 }
 
-.menu .container .item-menu .sub-menu li:hover {
+.container .item-menu .sub-menu li:hover {
   background-color: #ca2222;
 }
 
@@ -93,7 +115,7 @@
   display: block;
 }
 @media screen and (max-width: 720px) {
-  .menu .container {
+  .container {
     display: block;
   }
 }
