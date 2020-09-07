@@ -1,0 +1,25 @@
+/* Colores
+#ff1212
+#b31e1e
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: freight-sans-pro-n4, freight-sans-pro, sans-serif;
+  background-color: rgb(223, 221, 221);
+}
+
+.hero {
+  display: flex;
+  height: 700px;
+  width: 1300px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
