@@ -82,3 +82,8 @@ body {
     height: 30rem;
   }
 }
+@media screen and (max-width: 550px) {
+  .bienvenida {
+    font-size: 1.3rem;
+  }
+}
