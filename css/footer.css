@@ -38,23 +38,16 @@ footer .sub-tituto-footer {
 
 .container-social-icon {
   text-align: center;
-  font-size: 3rem;
-}
-
-.icon-social {
-  width: 3rem;
-  margin: 0 0.5rem;
+  font-size: 2.5rem;
 }
 
 footer #contacto {
   padding-left: 2rem;
-}
-
-footer #contacto {
   line-height: 1.7;
 }
 
 #titulo-footer {
+  line-height: 1.7;
   text-align: center;
   font-size: 1.4rem;
   margin-top: 0.8rem;

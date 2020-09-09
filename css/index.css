@@ -23,15 +23,15 @@ body {
 .hero {
   display: flex;
   max-width: 130rem;
-  height: 50rem;
   margin: 0 auto;
   background-color: #9bdfdd;
 }
 .container-image-hero {
-  height: inherit;
+  width: 40%;
 }
+
 .image-hero {
-  height: inherit;
+  width: 100%;
 }
 
 /* .container-promocion {
@@ -59,11 +59,20 @@ body {
   text-align: end;
   font-size: 1.5rem;
   justify-content: space-evenly;
-  width: 61%;
+  width: 60%;
   padding: 3rem;
-  padding-left: 5rem;
   color: white;
 }
+
+.titulo-hero,
+.descripcion-hero {
+  padding-bottom: 2rem;
+}
+
+.button-hero {
+  padding-top: 1rem;
+}
+
 .button-hero a {
   text-decoration: none;
   color: white;
@@ -74,16 +83,32 @@ body {
 
 @media screen and (max-width: 895px) {
   .hero {
-    height: 40rem;
+    height: auto;
+  }
+  .container-image-hero {
+    width: 50%;
+    padding: 0;
+  }
+  .bienvenida {
+    width: 50%;
   }
 }
 @media screen and (max-width: 702px) {
-  .hero {
-    height: 30rem;
-  }
 }
 @media screen and (max-width: 550px) {
+  .hero {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+  }
+  .container-image-hero {
+    height: 60%;
+  }
   .bienvenida {
-    font-size: 1.3rem;
+    text-align: center;
+    height: 40%;
+    width: 80%;
+    padding: 0;
+    margin-bottom: 1.2rem;
   }
 }
