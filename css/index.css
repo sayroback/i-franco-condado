@@ -1,25 +1,84 @@
 /* Colores
 #ff1212
 #b31e1e
+azul #003d59
 */
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   margin: 0;
   font-family: freight-sans-pro-n4, freight-sans-pro, sans-serif;
-  background-color: rgb(223, 221, 221);
+  /* background-color: rgb(223, 221, 221); */
 }
 
 .hero {
   display: flex;
-  height: 700px;
-  width: 1300px;
+  max-width: 130rem;
+  height: 50rem;
+  margin: 0 auto;
+  background-color: #9bdfdd;
+}
+.container-image-hero {
+  height: inherit;
+}
+.image-hero {
+  height: inherit;
+}
+
+/* .container-promocion {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+}
+
+.promocion {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  max-width: 25rem;
+  min-height: 25rem;
+  padding: 0.8rem;
+  background-color: rgba(0, 61, 89, 0.733);
+  color: white;
+  font-size: 1.8rem;
+} */
+
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  font-size: 1.5rem;
+  justify-content: space-evenly;
+  width: 61%;
+  padding: 3rem;
+  padding-left: 5rem;
+  color: white;
+}
+.button-hero a {
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+  padding: 4px;
+  background-color: #003d59;
+}
+
+@media screen and (max-width: 895px) {
+  .hero {
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 702px) {
+  .hero {
+    height: 30rem;
+  }
 }

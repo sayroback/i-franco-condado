@@ -1,35 +1,35 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #ff1212;
-  max-height: 55px;
-  max-width: 1300px;
+  max-height: 5.5rem;
+  max-width: 130rem;
   margin: 0 auto;
+  padding-left: 1rem;
 }
 
 .menu {
   display: flex;
-  width: 1300px;
 }
 
 .container-logo {
-  height: 90px;
+  height: 9rem;
 }
 
 .logo {
   position: relative;
-  top: 10px;
-  margin-left: 20px;
-  height: 90px;
-  padding: 10px;
+  top: 1rem;
+  margin-left: 2rem;
+  height: 9rem;
+  padding: 1rem;
   background-color: #ff1212;
-  box-shadow: 3px 2px 6px #e61111;
+  box-shadow: 0.3rem 0.2rem 0.6rem #e61111;
 }
 
 .container a {
   text-decoration: none;
   color: white;
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .container {
@@ -51,7 +51,7 @@
 .titulo-menu {
   display: flex;
   height: inherit;
-  padding: 0 12px;
+  padding: 0 1.2rem;
   justify-content: center;
   align-items: center;
 }
@@ -76,26 +76,26 @@
 }
 
 #oferta {
-  width: 132.317px;
+  width: 13.2317rem;
 }
 
 #empresas {
-  width: 168.05px;
+  width: 16.805rem;
 }
 
 .container .item-menu .sub-menu {
   list-style-type: none;
   position: absolute;
   width: inherit;
-  top: 55px;
+  top: 5.5rem;
   padding: 0;
   background-color: #b31e1e;
-  box-shadow: 3px 3px 8px #b31e1e;
+  box-shadow: 0.3rem 0.3rem 0.8rem #b31e1e;
 }
 
 .container .item-menu .sub-menu li {
-  padding: 16px;
-  margin: 0px;
+  padding: 1.6rem;
+  margin: 0;
   text-align: left;
 }
 
@@ -118,8 +118,19 @@
 #empresas:hover .sub-menu {
   display: block;
 }
-@media screen and (max-width: 720px) {
-  .container {
-    display: block;
+@media screen and (max-width: 895px) {
+  .container-logo {
+    height: 8rem;
+  }
+  .logo {
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 702px) {
+  .container-logo {
+    height: 7rem;
+  }
+  .logo {
+    height: 7rem;
   }
 }

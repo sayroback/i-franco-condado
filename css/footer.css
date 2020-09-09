@@ -1,10 +1,10 @@
 footer {
   background-color: gray;
   display: flex;
-  max-width: 1300px;
-  min-height: 250px;
+  max-width: 130rem;
+  min-height: 25rem;
   margin: 0 auto;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -15,24 +15,24 @@ footer a {
 
 footer .item-footer {
   width: 33.3%;
-  padding: 20px;
+  padding: 2rem;
   position: relative;
   justify-content: center;
 }
 
 footer .logo-footer {
-  margin: 5px 5px 10px 5px;
-  width: 200px;
+  margin: 0.5rem 0.5rem 10px 0.5rem;
+  width: 20rem;
 }
 
 footer .social {
-  margin: 0px auto;
-  width: 170px;
+  margin: 0 auto;
+  width: 17rem;
 }
 
 footer .sub-tituto-footer {
-  font-size: 11px;
-  margin: 20px 0 15px 0;
+  font-size: 1.1rem;
+  margin: 2rem 0 1.5rem 0;
   text-align: center;
 }
 
@@ -41,12 +41,12 @@ footer .sub-tituto-footer {
 }
 
 .icon-social {
-  width: 30px;
-  margin: 0 5px;
+  width: 3rem;
+  margin: 0 0.5rem;
 }
 
 footer #contacto {
-  padding-left: 20px;
+  padding-left: 2rem;
 }
 
 footer #contacto {
@@ -55,20 +55,24 @@ footer #contacto {
 
 #titulo-footer {
   text-align: center;
-  font-size: 14px;
-  margin: 8px 0 0 0;
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
 }
 
 #direccion:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+#telefono:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 #empresas-footer a {
   display: block;
-  width: 100px;
+  width: 10rem;
   line-height: 2.5;
-  text-indent: 10px;
+  text-indent: 1rem;
 }
 
 #empresas-footer a:hover {
@@ -77,12 +81,12 @@ footer #contacto {
 
 #autor {
   background-color: #1b2127;
-  height: 30px;
-  max-width: 1300px;
+  height: 3rem;
+  max-width: 130rem;
   margin: 0 auto;
   text-align: center;
-  padding: 6px 0 12px 0;
-  font-size: 12px;
+  padding: 0.6rem 0 1.2rem 0;
+  font-size: 1.2rem;
   color: white;
 }
 
