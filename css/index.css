@@ -56,7 +56,7 @@ body {
 .bienvenida {
   display: flex;
   flex-direction: column;
-  text-align: end;
+  text-align: initial;
   font-size: 1.5rem;
   justify-content: space-evenly;
   width: 60%;
