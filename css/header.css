@@ -28,10 +28,11 @@
 #burger-button {
   display: none;
 }
-.icon-phone {
-  order: 3;
+#phone-hedaer {
+  display: none;
 }
-.container a {
+.container .item-menu,
+a {
   text-decoration: none;
   color: white;
   font-size: 1.3rem;
@@ -76,14 +77,6 @@
   color: #ffc4c4;
 }
 
-#oferta {
-  width: 13.2317rem;
-}
-
-#empresas {
-  width: 16.805rem;
-}
-
 .container .item-menu .sub-menu {
   list-style-type: none;
   position: absolute;
@@ -98,32 +91,25 @@
   padding: 1.6rem;
   margin: 0;
   text-align: left;
+  transition: 0.3s;
 }
 
 .container .item-menu .sub-menu li:hover {
   background-color: #ca2222;
 }
 
-#oferta .sub-menu {
+.sub-menu {
   display: none;
 }
 
-#oferta:hover .sub-menu {
+/* #oferta:hover .sub-menu {
   display: block;
 }
-
-#empresas .sub-menu {
-  display: none;
-}
-
 #empresas:hover .sub-menu {
-  display: block;
-}
-@media screen and (max-width: 895px) {
-  .menu {
-    justify-content: center;
-  }
+  display: block; 
+} */
 
+@media screen and (max-width: 895px) {
   .container-logo {
     display: flex;
     order: 2;
@@ -132,10 +118,18 @@
   }
   .container {
     display: none;
+    flex-direction: column;
     z-index: 1;
-    height: auto;
+    position: absolute;
+    top: 55px;
   }
-  .hmenu-container {
+  .container.is-active {
+    display: flex;
+  }
+  .item-menu {
+    background-color: #ff1212;
+    height: 5rem;
+    width: 15rem;
   }
   #burger-button {
     display: flex;
@@ -152,7 +146,7 @@
     align-items: center;
     cursor: pointer;
   }
-  .icon-phone {
+  #phone-hedaer {
     display: flex;
     order: 3;
     width: 40px;
@@ -167,8 +161,26 @@
     align-items: center;
     cursor: pointer;
   }
+  .container .item-menu {
+    text-align: inherit;
+  }
   .logo {
     height: 8rem;
+  }
+  #oferta .sub-menu {
+    left: 150px;
+    top: 0px;
+  }
+  #empresas .sub-menu {
+    left: 150px;
+    top: 49px;
+  }
+
+  #empresas .sub-menu.is-active {
+    display: block;
+  }
+  #oferta .sub-menu.is-active {
+    display: block;
   }
 }
 @media screen and (max-width: 702px) {

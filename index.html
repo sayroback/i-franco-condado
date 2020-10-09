@@ -26,12 +26,10 @@
           alt="logo franco condado"
           />
         </a>
-        <div class="hmenu-container">
           <i class="icon-menu" id="burger-button"></i>
-        </div>
         <ul class="container">
           <li id="oferta" class="item-menu">
-            <a class="titulo-menu" href="">Oferta Académica</a>
+            <div class="titulo-menu" href="">Oferta Académica</div>
             <ul class="sub-menu">
               <li><a href="">Secundaria</a></li>
               <li><a href="">Preparatoria</a></li>
@@ -39,8 +37,8 @@
             </ul>
           </li>
           <li id="empresas" class="item-menu">
-            <a class="titulo-menu" class="titulo-menu" href=""
-              >Cursos para empresas</a
+            <div class="titulo-menu" class="titulo-menu" href=""
+              >Cursos para empresas</
             >
             <ul class="sub-menu">
               <li><a href="">Trabajador</a></li>
@@ -57,7 +55,7 @@
             <a class="titulo-menu" href="">Contáctanos</a>
           </li>
         </ul>
-        <i class="icon-phone"> </i>
+        <i id="phone-hedaer" class="icon-phone"> </i>
       </nav>
     </header>
     <main class="hero">
@@ -154,5 +152,37 @@
         <a href="https://platzi.com/@sayroback/">Sayroback</a>  <i class="icon-ello"></i>
       </p>
     </div>
+    <script>
+      const menu = document.querySelector('.container');
+      const burgerButton = document.querySelector('#burger-button')
+      const submenuOferta = document.querySelector('#oferta')
+      const submenuEmpresas = document.querySelector('#empresas')
+      const submenu1 = document.querySelector('#oferta .sub-menu')
+      const submenu2 = document.querySelector('#empresas .sub-menu')
+      burgerButton.addEventListener('click', hideShow)
+      submenuOferta.addEventListener('click', hideShow2)
+      submenuEmpresas.addEventListener('click', hideShow3)
+      function hideShow() {
+        if (menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active');
+        } else {
+          menu.classList.add('is-active');
+        }
+      }
+       function hideShow2() {
+        if (submenu1.classList.contains('is-active')) {
+          submenu1.classList.remove('is-active');
+        } else {
+          submenu1.classList.add('is-active');
+        }
+       }
+       function hideShow3() {
+        if (submenu2.classList.contains('is-active')) {
+          submenu2.classList.remove('is-active');
+        } else {
+          submenu2.classList.add('is-active');
+        }
+       }
+    </script>
   </body>
 </html>
