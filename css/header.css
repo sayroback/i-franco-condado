@@ -130,6 +130,7 @@ a {
     background-color: #ff1212;
     height: 5rem;
     width: 15rem;
+    cursor: pointer;
   }
   #burger-button {
     display: flex;

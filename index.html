@@ -164,32 +164,34 @@
       const burgerButton = document.querySelector('#burger-button')
       const submenuOferta = document.querySelector('#oferta')
       const submenuEmpresas = document.querySelector('#empresas')
-      const submenu1 = document.querySelector('#oferta .sub-menu')
-      const submenu2 = document.querySelector('#empresas .sub-menu')
+      const subOferta = document.querySelector('#oferta .sub-menu')
+      const subEmpresas = document.querySelector('#empresas .sub-menu')
       burgerButton.addEventListener('click', hideShow)
       submenuOferta.addEventListener('click', hideShow2)
       submenuEmpresas.addEventListener('click', hideShow3)
       function hideShow() {
         if (menu.classList.contains('is-active')) {
           menu.classList.remove('is-active');
+          subOferta.classList.remove('is-active');
+          subEmpresas.classList.remove('is-active');
         } else {
           menu.classList.add('is-active');
         }
       }
        function hideShow2() {
-        if (submenu1.classList.contains('is-active')) {
-          submenu1.classList.remove('is-active');
+        if (subOferta.classList.contains('is-active')) {
+          subOferta.classList.remove('is-active');
         } else {
-          submenu1.classList.add('is-active');
-          submenu2.classList.remove('is-active');
+          subOferta.classList.add('is-active');
+          subEmpresas.classList.remove('is-active');
         }
       }
       function hideShow3() {
-        if (submenu2.classList.contains('is-active')) {
-          submenu2.classList.remove('is-active');
+        if (subEmpresas.classList.contains('is-active')) {
+          subEmpresas.classList.remove('is-active');
         } else {
-          submenu2.classList.add('is-active');
-          submenu1.classList.remove('is-active');
+          subEmpresas.classList.add('is-active');
+          subOferta.classList.remove('is-active');
         }
        }
     </script>
