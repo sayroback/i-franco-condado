@@ -174,13 +174,15 @@
           submenu1.classList.remove('is-active');
         } else {
           submenu1.classList.add('is-active');
+          submenu2.classList.remove('is-active');
         }
-       }
-       function hideShow3() {
+      }
+      function hideShow3() {
         if (submenu2.classList.contains('is-active')) {
           submenu2.classList.remove('is-active');
         } else {
           submenu2.classList.add('is-active');
+          submenu1.classList.remove('is-active');
         }
        }
     </script>
