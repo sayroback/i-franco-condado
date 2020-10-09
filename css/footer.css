@@ -4,13 +4,14 @@ footer {
   max-width: 130rem;
   min-height: 25rem;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: white;
 }
 
 footer a {
   color: white;
   text-decoration: none;
+  font-size: 1.4rem;
 }
 
 footer .item-footer {
@@ -31,16 +32,23 @@ footer .social {
 }
 
 footer .sub-tituto-footer {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 2rem 0 1.5rem 0;
   text-align: center;
 }
 
 .container-social-icon {
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
   font-size: 2.5rem;
 }
-
+.icon-footer-visita {
+  font-size: 2rem;
+}
+.icon-footer-social {
+  font-size: 3rem;
+}
 footer #contacto {
   padding-left: 2rem;
   line-height: 1.7;
@@ -49,7 +57,7 @@ footer #contacto {
 #titulo-footer {
   line-height: 1.7;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: 0.8rem;
 }
 
@@ -80,7 +88,7 @@ footer #contacto {
   margin: 0 auto;
   text-align: center;
   padding: 0.6rem 0 1.2rem 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: white;
 }
 
