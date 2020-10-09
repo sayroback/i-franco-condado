@@ -8,8 +8,8 @@
 
 .menu {
   display: flex;
-  justify-content: space-between;
   flex: 1;
+  justify-content: space-between;
 }
 
 .container-logo {
@@ -25,7 +25,12 @@
   background-color: #ff1212;
   box-shadow: 0.3rem 0.2rem 0.6rem #e61111;
 }
-
+#burger-button {
+  display: none;
+}
+.icon-phone {
+  order: 3;
+}
 .container a {
   text-decoration: none;
   color: white;
@@ -34,7 +39,6 @@
 
 .container {
   display: flex;
-  flex-wrap: wrap;
   height: inherit;
   list-style-type: none;
   justify-content: right;
@@ -116,8 +120,52 @@
   display: block;
 }
 @media screen and (max-width: 895px) {
+  .menu {
+    justify-content: center;
+  }
+
   .container-logo {
+    display: flex;
+    order: 2;
     height: 8rem;
+    justify-content: center;
+  }
+  .container {
+    display: none;
+    z-index: 1;
+    height: auto;
+  }
+  .hmenu-container {
+  }
+  #burger-button {
+    display: flex;
+    order: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(204, 24, 24, 0.699);
+    z-index: 4;
+    color: white;
+    font-size: 2rem;
+    margin-top: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .icon-phone {
+    display: flex;
+    order: 3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(204, 24, 24, 0.699);
+    z-index: 4;
+    color: white;
+    font-size: 2rem;
+    margin-top: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
   .logo {
     height: 8rem;
